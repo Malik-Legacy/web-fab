@@ -1,0 +1,159 @@
+body{
+    background-color: black;
+}
+
+
+#glf{
+    -webkit-box-shadow:0px 0px 101px 300px rgba(45,255,196,0.9);
+    -moz-box-shadow: 0px 0px 101px 200px rgba(45,255,196,0.9);
+    box-shadow: 0px 0px 101px 200px rgba(45,255,196,0.9);
+    background-color: aqua;
+position: absolute;
+top: 100%;
+left: 0%;
+width: 1100%;
+height: 2%;
+z-index: -1;
+}
+#hi{
+    color: white;
+    font-family: monospace;
+    font-size:500%;
+    margin-left: 7%;
+}
+#hi2{
+    color: white;
+    margin-left: 10%;
+    font-size: 150%;
+    font-family: monospace;
+    
+}
+#ht{
+color: white;
+margin: 2%;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+header{
+    top: 4%;
+    position: absolute;
+    }
+li { 
+    display: table-cell; 
+    top: 0%;
+    left: 20%;
+    position: relative; 
+  }
+  a {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  #b{
+    background-color: black;
+    border-left: white double 2px;
+    border-bottom: white double 2px;
+    border-right: white double 2px;
+    border-top: rgb(255, 255, 255) double 2px;
+    color: white;
+    border-radius: 5%;
+  }
+  #b:hover{
+    border-right: white double 2px;
+    border-top: white double 2px;
+    border-left: none;
+    border-bottom: none;
+  }
+ .button-64{
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    transition: all 0.5s ease;
+  }
+  .button-64:hover {
+    letter-spacing: 3px;
+  }
+  #i{
+    color: #fff;
+    margin-left: 35%;
+    margin-top: 7%;
+    font-family: monospace;
+    opacity:100%;
+    font-size: 500%;
+  }
+
+  .logos-slide img{
+    height: 100px;
+    padding: 0,0;
+    margin: 0%;
+     }
+     .logos-slide{
+       white-space: nowrap;
+       animation: 25s slide infinite linear;
+       background-color: black;
+     }
+     .logos{
+      margin-top: 5%;
+      background-color: rgb(0, 0, 0);
+     }
+     .logos:hover .logos-slide{
+       animation-play-state: paused;
+     }
+     .logos::before {
+       position: absolute;
+       top:95%;
+       left: 0%;
+       width: 200px;
+       height: 17%;
+       background: linear-gradient(to left,rgba(255,255,255, 0), rgb(0, 0, 0));
+       content: "";
+       z-index: 2;
+     
+     }
+     .logos::after {
+       position: absolute;
+       top: 95%;
+       right: 0%;
+       width: 200px;
+       height: 17%;
+       background: linear-gradient(to right,rgba(255,255,255, 0), rgb(0, 0, 0));
+       content: "";
+       z-index: 2;
+     
+     }
+     @keyframes slide {
+      from{
+          transform: translateX(0);
+      }
+      to{
+          transform: translateX(-100%);
+      }
+      
+  }
